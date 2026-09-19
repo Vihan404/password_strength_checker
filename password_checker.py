@@ -39,11 +39,11 @@ def check_password_strength(password):
 
     # Determine strength level
     if score >= 5:
-        strength = "Very Strong 💪"
+        strength = "Very Strong "
     elif score >= 3:
-        strength = "Medium ⚠️"
+        strength = "Medium "
     else:
-        strength = "Weak ❌"
+        strength = "Weak "
 
     return strength, score, suggestions
 
@@ -61,7 +61,7 @@ def main():
         for hint in hints:
             print(hint)
     else:
-        print("\nPerfect! Your password is secure. ✅")
+        print("\nPerfect! Your password is secure. ")
 
 if __name__ == "__main__":
     main()
